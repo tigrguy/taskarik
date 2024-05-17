@@ -1,149 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="rus">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/site.webmanifest">
+        <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="icons/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="taskarik">
+        <meta name="application-name" content="taskarik">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-config" content="icons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>Document</title>
-</head>
-
-
-<body>
-    
-
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="container-fluid">
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <a class="navbar-brand" href="#">Taskarik</a>
-                          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">преимущества</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">о нас</a>
-                              </li>
-                            </ul>
-                            <form class="d-flex">
-                                <button class="btn btn-outline-success me-2" type="button">Вход</button>
-                                <button class="btn btn-sm btn-outline-secondary" type="button">Регистрация</button>
-                            </form>
-                          </div>
-                        </div>
-                      </nav>
-
-                </div>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>taskarik</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-flex">
+                <span id="sidebar-button"><i class="fa fa-list"></i></span>
+                <h1 id="title" class="text-align-center">карточки</h1>
+                <span class="title-actions-container" style="font-size:25px;cursor:pointer;letter-spacing: 1ch;">
+                    <label for="auto-save" class="auto-save-text">сохранять автоматически</label>
+                    <label class="switch" id="auto-save-label">
+                       <input id="auto-save" type="checkbox" checked>
+                       <span class="slider round"></span>
+                    </label>
+                    <i title="удалить все доски" id="delete-button" class="fa fa-trash"></i>
+                    <i title="сохранить все доски" id="save-button" class="fa fa-floppy-o"></i>
+                    <i title="настройки" id="settings-button" class="fa fa-gear"></i>
+                </span>
             </div>
-        </div>
-    </header>
-
-
-    <section class="gradient-form" style="background-color: #eee;">
-        <div class="container">
-          <div class="  align-items-center h-100">
-            <div class="col-xl-10">
-              <div class="card rounded-3 text-black">
-                <div class="row g-0">
-                  <div class="col-lg-6"> 
-
-                    <div class="card-body p-md-5 mx-md-4">
-      
-                      <div class="text-center">
-                        <h4 class="mt-1 mb-5 pb-1">Слушай, приятель! Если ты устал от посредственности, 
-                            если хочешь, чтобы твоя жизнь была как настоящий сказка – ты пришел по адресу. 
-                            Наш продукт – не просто товар, это искусство. Это та чертовщина, 
-                            которую ты ждал всю свою жизнь, даже не зная об этом.</h4>
-                      </div>
-      
-                      <form>
-                        <p>Мы не говорим тебе, что это просто "еще одна штучка", 
-                            мы говорим: "Это твой билет в великое приключение". 
-                            Когда ты держишь наш продукт в руках, ты чувствуешь себя так, 
-                            будто бы ты сам стал главным персонажем фильма. 
-                            Это не просто покупка – это твое вхождение в мир стиля, 
-                            уверенности и невероятных впечатлений.</p>
-      
-                        <div class="form-outline mb-4">
-                          <input type="email" id="form2Example11" class="form-control"
-                            placeholder="Номер телефона или почта" />
-                          <label class="form-label" for="form2Example11">Логин</label>
-                        </div>
-      
-                        <div class="form-outline mb-4">
-                          <input type="password" id="form2Example22" class="form-control" />
-                          <label class="form-label" for="form2Example22">Пароль</label>
-                        </div>
-
-                        <div class="pt-1 mb-5 pb-1">
-                          <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Вход</button>
-                        </div>
-      
-                      </form>
-                      
-                    </div>
-                    
-                  
-                  </div>
-
-                  <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
-                    <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                      <img class="some" src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2016/05/20/1331795954995_2/%D1%80%D0%B0%D0%B9%D0%B0%D0%BD-%D0%B3%D0%BE%D1%81%D0%BB%D0%B8%D0%BD%D0%B3.jpg" width="400">
-                    </div>
-                  </div>
-
-
-
-                </div>
-
-                
-                <!-- <div class="col-lg-5 d-flex align-items-center gradient-custom-2 ">
-                    <div class="text-black px-3 py-4 p-md-5 mx-md-4">
-                      <h4 class="mb-4">Не теряй времени на дешевые подделки.</h4>
-                      <p class="small mb-0">Мы не обещаем тебе рай на земле, но, честно говоря, 
-                        мы близки к этому. Так что, приятель, купи наш продукт, 
-                        и дай себе шанс стать настоящей легендой своей жизни. 
-                        Поверь, ты этого стоишь</p>
-                    </div>
-                  </div> -->
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>    
-
-
-
-
-    <div class="container">
-            <div class="row">
-                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
-                    <div class="col-md-4 d-flex align-items-center">
-                      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                      </a>
-                      <span class="mb-3 mb-md-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2023 Таскарик. <br> Все права защищены </font></font></span>
-                    </div>
-                  </footer>
-            </div>
-    </div>
+        </header>
         
 
+        <div id="sidebar" class="sidenav">
+            <span id="sidebar-close">&times;</span>
+            <p class="is-title">доски</p>
+            <ul id="boards-list">
+                <!-- Boards will be listed here... -->
+            </ul>
 
-    <script src="js/bootstrap.bundle.js"></script>
-</body>
+            <div class="flex-col">
+                <input type="text" id="add-board-text" name="add-board" placeholder="название доски">
+                <button id="add-board-button">добавить доску</button>
+            </div>
+        </div>
+
+        <div id="card-context-menu" class="context-menu">
+            <!-- Right-click context menu on cards. -->
+            <ul>
+                <li id="card-context-menu-delete">удалить</li>
+                <li id="card-context-menu-clear">очистить</li>
+                <li id="card-context-menu-duplicate">копировать</li>
+            </ul>
+        </div>
+
+        <div class="container" id="main-container">
+            <div id="cards-container">
+                <div id="add-card">
+                    <input maxlength="128" type="text" id="add-card-text" name="add-card" placeholder="добавить карточку" autofocus>
+                    <button id="add-card-button" class="plus-button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="alert-container">
+            <div id="alerts">
+                <!-- alerts go here -->
+            </div>
+        </div>
+
+        <div id="confirm-dialog" class="modal">
+            <div class="dialog-content">
+                <span id="confirm-dialog-close" class="confirm-dialog-close">&times;</span>
+                <div id="confirm-dialog-text" class="confirm-dialog-text"></div>
+                <div class="confirm-dialog-actions">
+                    <button id="confirm-dialog-cancel" class="confirm-dialog-cancel"> нет </button>
+                    <button id="confirm-dialog-confirm" class="confirm-dialog-confirm"> да </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
 </html>
-    
